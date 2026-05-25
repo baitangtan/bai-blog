@@ -19,4 +19,4 @@ npm run typecheck # TypeScript check
 
 ## Deploy
 
-Deployed on Vercel at [bai-blog.vercel.app](https://bai-blog.vercel.app).
+Deployed on Vercel — auto-deploys on `git push` to main.
