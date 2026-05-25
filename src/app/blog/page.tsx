@@ -1,15 +1,14 @@
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Reveal } from "@/components/reveal";
+import { getAllPosts } from "@/blog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog - Bai",
 };
 
-const posts = [
-  { title: "Hello NextJS", date: "2023-09-09", tags: ["NextJS"], slug: "hello-nextjs", desc: "" },
-];
+const posts = getAllPosts();
 
 function PostCard({ post }: { post: typeof posts[number] }) {
   return (
