@@ -1344,6 +1344,7 @@ messageModule.toast({content:'起卦已完成！'});document.dispatchEvent(new C
 function calculateYinYang(){const now=new Date();const dateTimeString=now.toISOString().replace(/[^0-9]/g,'').slice(0,14);const sum=dateTimeString.split('').reduce((acc,digit)=>acc+parseInt(digit,10),0);return(sum%4)+1;}
 return{shiKongQigua,calculateYinYang,getClickCount:()=>clickCount,setClickCount:(value)=>{clickCount=value;},}})();;(()=>{'use strict';const resetBtn=document.getElementById('reset');if(resetBtn){resetBtn.addEventListener('click',resetAll);}
 async function resetAll(){const confirmed=await messageModule.confirm({content:'是否要重置所有内容？'});if(!confirmed){return;}
+const taskId=liuyaoLocalStorage.getKeyData('taskId');if(taskId){try{await fetch(`/api/ai/tasks/${taskId}/cancel`,{method:'POST'});}catch(e){}}
 clearUrlTempId();resetTaskRuntime();resetStorage();await resetInputAndPaipan();resetView();messageModule.info({content:'重置成功！'});}
 function clearUrlTempId(){if(!window.location.search.includes('temp_id=')){return;}
 const url=new URL(window.location);url.searchParams.delete('temp_id');window.history.replaceState({},document.title,url.toString());}
