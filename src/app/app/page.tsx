@@ -7,7 +7,12 @@ export const metadata: Metadata = {
   title: "Apps - Bai",
 };
 
-const apps: { title: string; desc: string; url: string }[] = [];
+const apps: { title: string; desc: string; url: string }[] = [
+  { title: "六爻", desc: "六爻占卜，起卦解卦", url: "/liuyao/" },
+  { title: "大六壬", desc: "大六壬占卜，时空推算", url: "/liuren/" },
+  { title: "奇门遁甲", desc: "奇门遁甲，排盘预测", url: "/qimen/" },
+  { title: "太乙神数", desc: "太乙神数，命理推算", url: "/taiyi/" },
+];
 
 export default function AppsPage() {
   return (

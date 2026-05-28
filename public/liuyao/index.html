@@ -1,0 +1,788 @@
+
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <!-- Progressive Web App 配置 -->
+    <link rel="manifest" href="../manifest.json">
+    <!-- 安卓优化 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- IOS优化 -->
+    <link rel="apple-touch-icon" sizes="512x512" href="../apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="512x512" href="../apple-touch-icon-precomposed.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="灵爻妙解">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <!-- PC优化 -->
+    <meta name="theme-color" content="#222831">
+    <meta name="application-name" content="灵爻妙解">
+    <title>六爻</title>
+<meta name="description" content="灵爻妙解六爻应用提供在线起卦排盘、用神取用、世应关系、动爻分析、现实对轨与应期推断，结合六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排完成结构化解读。">
+<meta name="keywords" content="六爻,在线六爻排盘,六爻占卜,六爻解卦,六爻AI解读,六爻起卦,用神取用,世应关系,动爻分析,六爻应期,MCP应期计算,多智能体解卦,灵爻妙解">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://lingyaomiaojie.com/liuyao/">
+<link rel="sitemap" type="application/xml" href="../sitemap.xml">
+<link rel="alternate" type="text/plain" href="../llms.txt" title="LLMS.txt">
+<meta name="msvalidate.01" content="A97A67B8A4CAC96A63BF096F104B58BE">
+<meta name="google-site-verification" content="Boxmv8L-Eb0d-Xe3CZ751_n8IpdO3hP4aZ4AMPTMqxY">
+<meta name="sogou_site_verification" content="VQaBwsID7L">
+<meta name="baidu-site-verification" content="codeva-2ecxeZ1bk0">
+<meta property="og:title" content="六爻在线排盘与AI深度解卦｜灵爻妙解六爻占卜">
+<meta property="og:description" content="灵爻妙解六爻应用提供在线起卦排盘、用神取用、世应关系、动爻分析、现实对轨与应期推断，结合六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排完成结构化解读。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="../liuyao/">
+<meta property="og:image" content="../static/base/img/og-main.png">
+<meta property="og:site_name" content="灵爻妙解">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="六爻在线排盘与AI深度解卦｜灵爻妙解六爻占卜">
+<meta name="twitter:description" content="灵爻妙解六爻应用提供在线起卦排盘、用神取用、世应关系、动爻分析、现实对轨与应期推断，结合六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排完成结构化解读。">
+<meta name="twitter:image" content="../static/base/img/og-main.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://lingyaomiaojie.com/#website", "name": "灵爻妙解", "url": "https://lingyaomiaojie.com"}, {"@type": "WebPage", "@id": "https://lingyaomiaojie.com/liuyao/#webpage", "name": "六爻在线排盘与AI深度解卦｜灵爻妙解六爻占卜", "description": "灵爻妙解六爻应用提供在线起卦排盘、用神取用、世应关系、动爻分析、现实对轨与应期推断，结合六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排完成结构化解读。", "url": "https://lingyaomiaojie.com/liuyao/", "isPartOf": {"@id": "https://lingyaomiaojie.com/#website"}, "image": "https://lingyaomiaojie.com/static/base/img/og-main.png"}, {"@type": "Article", "@id": "https://lingyaomiaojie.com/liuyao/#article", "headline": "六爻在线排盘与 AI 深度解卦", "description": "灵爻妙解六爻应用提供在线起卦排盘、用神取用、世应关系、动爻分析、现实对轨与应期推断，结合六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排完成结构化解读。", "mainEntityOfPage": {"@id": "https://lingyaomiaojie.com/liuyao/#webpage"}, "author": {"@type": "Organization", "name": "灵爻妙解内容团队"}, "publisher": {"@type": "Organization", "name": "灵爻妙解"}, "datePublished": "2026-05-08", "dateModified": "2026-05-08", "about": ["六爻", "在线排盘", "AI解卦", "用神取用", "世应关系", "动爻分析", "应期推断"], "citation": ["https://schema.org/Article", "https://schema.org/FAQPage", "https://schema.org/HowTo", "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"]}, {"@type": "FAQPage", "@id": "https://lingyaomiaojie.com/liuyao/#faq", "mainEntity": [{"@type": "Question", "name": "六爻在线排盘可以看哪些问题？", "acceptedAnswer": {"@type": "Answer", "text": "可用于感情关系、事业工作、财运趋势、合作成败、考试求职、出行安排、失物寻人、事情发展等问题的参考分析。"}}, {"@type": "Question", "name": "灵爻妙解六爻和普通 AI 解读工具有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "灵爻妙解基于六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排构建，会按用神、世应、动爻、现实对轨、应期等主题展开结构化推理。"}}, {"@type": "Question", "name": "什么是用神取用？", "acceptedAnswer": {"@type": "Answer", "text": "用神是六爻判断中代表所问事情核心对象的关键爻。取用是否准确，会直接影响后续判断方向。"}}, {"@type": "Question", "name": "什么是世应关系？", "acceptedAnswer": {"@type": "Answer", "text": "世爻通常代表求测人自身，应爻常代表对方、目标或外部环境。世应关系可以帮助判断双方状态、互动关系与事情成败倾向。"}}, {"@type": "Question", "name": "六爻应期推断可以直接作为结果吗？", "acceptedAnswer": {"@type": "Answer", "text": "应期推断属于时间参考，适合结合现实进展观察和复盘，不宜作为唯一决策依据。"}}]}, {"@type": "HowTo", "@id": "https://lingyaomiaojie.com/liuyao/#howto", "name": "如何使用六爻在线排盘与AI深度解卦｜灵爻妙解六爻占卜", "description": "灵爻妙解六爻应用提供在线起卦排盘、用神取用、世应关系、动爻分析、现实对轨与应期推断，结合六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排完成结构化解读。", "step": [{"@type": "HowToStep", "name": "输入占问信息", "text": "填写占问人、问题、时间等必要信息，确保问题具体、边界清晰。", "position": 1}, {"@type": "HowToStep", "name": "生成六爻卦盘", "text": "系统根据输入信息生成卦盘，并展示干支、旬空、六亲、六神、动爻等结构。", "position": 2}, {"@type": "HowToStep", "name": "选择 AI 解读模式", "text": "可选择标准流式解读或集群解读，按需求平衡速度与分析深度。", "position": 3}, {"@type": "HowToStep", "name": "查看分层结论", "text": "重点查看用神取用、世应关系、动爻分析、现实对轨和应期推断。", "position": 4}, {"@type": "HowToStep", "name": "保存或公开复盘", "text": "可保存个人卦例，或在脱敏后公开分享用于后续观察与复盘。", "position": 5}]}]}</script>
+    <link rel="stylesheet" href="../static/CACHE/css/output.2ce8111a1306.css" type="text/css">
+    <style>
+      #menu-area { z-index: 1000 !important; }
+      #dropdown-overlay { z-index: 999 !important; }
+      .blog-theme-btn { cursor: pointer; border: 1px solid #e5e7eb; border-radius: 6px; background: #fafafa; padding: 8px; color: #8b8b8b; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
+      .blog-theme-btn:hover { border-color: #a78bfa; color: #a78bfa; transform: scale(1.05); }
+      .dark .blog-theme-btn { background: #2d2d3a; border-color: #8b8b8b; color: #b4b4b4; }
+      .dark .blog-theme-btn:hover { border-color: #a78bfa; color: #a78bfa; }
+      .theme-icon-wrap { display: flex; align-items: center; justify-content: center; }
+      .theme-icon-wrap[data-theme='dark'] .theme-sun { display: none; }
+      .theme-icon-wrap[data-theme='dark'] .theme-moon { display: block; }
+      .theme-icon-wrap[data-theme='light'] .theme-sun { display: block; }
+      .theme-icon-wrap[data-theme='light'] .theme-moon { display: none; }
+</style>
+    <script>localStorage.setItem('guide_skipped','true');</script>
+    <script>
+        window.APP_DEBUG = false;
+        if (!window.APP_DEBUG && window.console) {
+            window.console.log = function () {};
+            window.console.info = function () {};
+            window.console.debug = function () {};
+        }
+    </script>
+    
+    <script>
+      (function() {
+        var KEY = 'theme';
+        function getTheme() { return localStorage.getItem(KEY) || 'dark'; }
+        function setTheme(t) {
+          localStorage.setItem(KEY, t);
+          var root = document.documentElement;
+          root.classList.remove('light', 'dark');
+          if (t === 'dark') {
+            root.classList.add('dark');
+            root.style.colorScheme = 'dark';
+          } else {
+            root.classList.add('light');
+            root.style.colorScheme = 'light';
+          }
+          var wrap = document.querySelector('.theme-icon-wrap');
+          if (wrap) wrap.setAttribute('data-theme', t);
+        }
+        function notifyIframesAboutTheme(theme) {
+          var iframes = document.querySelectorAll('iframe');
+          iframes.forEach(function(iframe) {
+            try {
+              if (iframe.contentWindow) {
+                iframe.contentWindow.postMessage({type: 'THEME_CHANGE', theme: theme}, '*');
+              }
+            } catch(e) {}
+          });
+        }
+        function toggleTheme() {
+          var newTheme = getTheme() === 'dark' ? 'light' : 'dark';
+          setTheme(newTheme);
+          notifyIframesAboutTheme(newTheme);
+        }
+        // Initialize on DOMContentLoaded: clone button to remove old listeners, attach ours
+        document.addEventListener('DOMContentLoaded', function() {
+          setTheme(getTheme());
+          var btn = document.getElementById('theme-btn');
+          if (btn) {
+            var clone = btn.cloneNode(true);
+            btn.parentNode.replaceChild(clone, btn);
+            clone.addEventListener('click', toggleTheme);
+          }
+          var logo = document.getElementById('logo');
+          var menuArea = document.getElementById('menu-area');
+          if (logo && menuArea) {
+            logo.addEventListener('click', function(e) {
+              e.stopPropagation();
+              menuArea.classList.toggle('show');
+            });
+            document.addEventListener('click', function(e) {
+              if (menuArea.classList.contains('show') && !menuArea.contains(e.target)) {
+                menuArea.classList.remove('show');
+              }
+            });
+          }
+        });
+        // Multi-tab sync
+        window.addEventListener('storage', function(e) {
+          if (e.key === KEY) setTheme(e.newValue);
+        });
+      })();
+    </script></head>
+
+<body>
+
+<div class="menu-area" id="menu-area">
+    <a href="../">首页</a>
+    
+    <a href="../liuyao">六爻</a>
+    <a href="../liuren">六壬</a>
+    <a href="../qimen">奇门</a>
+    <a href="../taiyi">太乙</a>
+
+</div>
+<div class="page-shell" id="page-shell">
+<header>
+    <div class="logo" id="logo">
+        <div class="logo-icon"></div>
+        <div class="logo-text">
+            <div class="logo-title">灵爻妙解</div>
+            <p>传承易学智慧</p>
+        </div>
+    </div>
+    <div class="drawer-menu-tip" id="drawer-menu-tip" role="status" aria-live="polite" aria-hidden="true">
+        <div class="drawer-menu-tip-content">
+            <strong>菜单已移到这里</strong>
+            <span>点击“灵爻妙解”可打开左侧抽屉菜单</span>
+        </div>
+        <button type="button" class="drawer-menu-tip-dismiss" id="drawer-menu-tip-dismiss">知道了</button>
+	</div>
+	<div class="user-area" id="user-area">
+        
+        <button class="theme-btn blog-theme-btn" id="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon-wrap">
+            <svg class="theme-sun" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+            <svg class="theme-moon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clipRule="evenodd" />
+            </svg>
+          </span>
+        </button>
+	</div>
+</header>
+<div class="stars" id="starsContainer"></div>
+<!-- 遮罩层 -->
+<div class="dropdown-overlay" id="dropdown-overlay"></div>
+
+    <div class="agent-panel" id="agent-panel">
+        <div class="agent-close-btn" id="agent-close-btn">✕</div>
+        <!-- 辩论轮次标签页 -->
+        <div class="debate-tabs" id="debate-tabs">
+            <div class="debate-tab" data-tab="debate-round-0" id="tab-round-0">深度推理</div>
+            <div class="debate-tab active" data-tab="debate-round-1" id="tab-round-1">用神取用</div>
+            <div class="debate-tab" data-tab="debate-round-2" id="tab-round-2">世应关系</div>
+            <div class="debate-tab" data-tab="debate-round-3" id="tab-round-3">动爻分析</div>
+            <div class="debate-tab" data-tab="debate-round-4" id="tab-round-4">现实对轨</div>
+            <div class="debate-tab" data-tab="debate-round-5" id="tab-round-5">应期推断</div>
+        </div>
+        <!-- 辩论轮次内容区 -->
+        <div class="debate-tab-content" id="debate-round-0"></div>
+        <div class="debate-tab-content active" id="debate-round-1"></div>
+        <div class="debate-tab-content" id="debate-round-2"></div>
+        <div class="debate-tab-content" id="debate-round-3"></div>
+        <div class="debate-tab-content" id="debate-round-4"></div>
+        <div class="debate-tab-content" id="debate-round-5"></div>
+    </div>
+
+<main class="container">
+    
+    <div class="index-content">
+        <!-- 左侧主面板 -->
+        <div class="panel" id="main-panel">
+            <!-- 卦例信息卡片 -->
+            <div class="card person-info" id="person-info">
+                <div class="wrapper">
+                    <input class="input" aria-label="占问人?" id="name" required>
+                    <div class="hint">占问人（必填）</div>
+                </div>
+
+                <div class="wrapper">
+                    <select class="input" aria-label="性别" id="gender" required>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                    <div class="hint">性别（必填）</div>
+                </div>
+
+                <div class="wrapper">
+                    <input class="input" aria-label="出生日期" id="birthday">
+                    <div class="hint">出生（公历）（选填）</div>
+                </div>
+
+                <div class="wrapper">
+                    <input class="input" aria-label="身份" id="identity" required>
+                    <div class="hint">身份（选填）</div>
+                </div>
+
+                <div class="wrapper">
+                    <input class="input" aria-label="占问事项" id="question" required>
+                    <div class="hint">占问事项（必填）</div>
+                </div>
+
+                <div class="wrapper">
+                    <input class="input" id="time" aria-label="占问时间" required>
+                    <div class="hint">占问时间（必填）</div>
+                </div>
+                
+    <div class="wrapper">
+        <select class="input" aria-label="AI解读模式" id="mode" required>
+            <option value="multi">集群解读</option>
+            <option value="single">标准流式</option>
+        </select>
+        <div class="hint">工作流模式（必填）</div>
+    </div>
+    <!-- 动态插入的信息输入框 -->
+    <div class="wrapper">
+        <select class="input" aria-label="解读风格" id="agent" data-category="liuyao"
+                required>
+            <option value="pro">专业解析</option>
+            <option value="baihua">白话解读</option>
+        </select>
+        <div class="hint">解读风格（必填）</div>
+    </div>
+    <div class="help" id="help">点此查看如何填写信息？</div>
+
+            </div>
+            
+    <!-- 动态插入的排盘区域 -->
+    <!-- 神煞卡片 -->
+<div class="card shensha-grid" id="shensha">
+    <!-- 12地支神煞 -->
+
+    <div class="shensha-list">
+        <div class="shensha-list-row1">
+            <div class="shensha-list-time">子</div>
+            <div class="shensha-list-shen" id="zi-shen">未知</div>
+            <div class="shensha-list-time">丑</div>
+            <div class="shensha-list-shen" id="chou-shen">未知</div>
+            <div class="shensha-list-time">寅</div>
+            <div class="shensha-list-shen" id="yin-shen">未知</div>
+            <div class="shensha-list-time">卯</div>
+            <div class="shensha-list-shen" id="mao-shen">未知</div>
+            <div class="shensha-list-time">辰</div>
+            <div class="shensha-list-shen" id="chen-shen">未知</div>
+            <div class="shensha-list-time">巳</div>
+            <div class="shensha-list-shen" id="si-shen">未知</div>
+        </div>
+        <div class="shensha-list-row2">
+            <div class="shensha-list-time">午</div>
+            <div class="shensha-list-shen" id="wu-shen">未知</div>
+            <div class="shensha-list-time">未</div>
+            <div class="shensha-list-shen" id="wei-shen">未知</div>
+            <div class="shensha-list-time">申</div>
+            <div class="shensha-list-shen" id="shen-shen">未知</div>
+            <div class="shensha-list-time">酉</div>
+            <div class="shensha-list-shen" id="you-shen">未知</div>
+            <div class="shensha-list-time">戌</div>
+            <div class="shensha-list-shen" id="xu-shen">未知</div>
+            <div class="shensha-list-time">亥</div>
+            <div class="shensha-list-shen" id="hai-shen">未知</div>
+        </div>
+    </div>
+
+</div>
+<!-- 干支卡片 -->
+<div class="card gz-time" id="gz">
+    <div class="liuyao-gztime-layout">
+        <div class="gz-show">
+            <span id="year-gz"></span>
+            <span> 年</span>
+        </div>
+        <div class="gz-show">
+            <span id="month-gz"></span>
+            <span> 月</span>
+        </div>
+        <div class="gz-show">
+            <span id="day-gz"></span>
+            <span> 日</span>
+        </div>
+        <div class="gz-show">
+            <span>旬空:</span>
+            <span id="xkong"></span>
+        </div>
+    </div>
+</div>
+<!-- 排盘卡片 -->
+<div class="card paipan" id="paipan">
+    <!-- 三列：藏卦、本卦、变卦 -->
+    <div class="canggua-wai">
+        <div class="card cg-guaming" id="cg-guaming"></div>
+        <div class="cg">
+            <div class="cg-symbol" id="cg-6yao">
+                <div class="fill-symbol">
+                    <span id="cg-6yao-6q"></span>
+                    <span id="cg-6yao-nj"></span>
+                    <span id="cg-6yao-5x"></span>
+                </div>
+            </div>
+            <div class="cg-symbol" id="cg-5yao">
+                <div class="fill-symbol">
+                    <span id="cg-5yao-6q"></span>
+                    <span id="cg-5yao-nj"></span>
+                    <span id="cg-5yao-5x"></span>
+                </div>
+            </div>
+            <div class="cg-symbol" id="cg-4yao">
+                <div class="fill-symbol">
+                    <span id="cg-4yao-6q"></span>
+                    <span id="cg-4yao-nj"></span>
+                    <span id="cg-4yao-5x"></span>
+                </div>
+            </div>
+            <div class="cg-symbol" id="cg-3yao">
+                <div class="fill-symbol">
+                    <span id="cg-3yao-6q"></span>
+                    <span id="cg-3yao-nj"></span>
+                    <span id="cg-3yao-5x"></span>
+                </div>
+            </div>
+            <div class="cg-symbol" id="cg-2yao">
+                <div class="fill-symbol">
+                    <span id="cg-2yao-6q"></span>
+                    <span id="cg-2yao-nj"></span>
+                    <span id="cg-2yao-5x"></span>
+                </div>
+            </div>
+            <div class="cg-symbol" id="cg-1yao">
+                <div class="fill-symbol">
+                    <span id="cg-1yao-6q"></span>
+                    <span id="cg-1yao-nj"></span>
+                    <span id="cg-1yao-5x"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bengua-wai" id="bengua">
+        <div class="card bengua-guaming" id="bengua-guaming"></div>
+        <div class="bengua">
+
+            <div class="bengua-symbol" data-symbol="1" id="6yao">
+                <div class="fill-symbol">
+                    <span class="shen" id="bengua-6yao-6shen"></span>
+                </div>
+                <div class="fill-symbol">
+                    <span class="liuqin" id="bengua-6yao-6q"></span>
+                    <span id="bengua-6yao-nj"></span>
+                    <span id="bengua-6yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+                <div class="fill-symbol">
+                    <span class="shiying" id="bengua-6yao-sy"></span>
+                    <span class="dongyao" id="bengua-6yao-d"></span>
+                </div>
+            </div>
+
+            <div class="bengua-symbol" data-symbol="1" id="5yao">
+                <div class="fill-symbol">
+                    <span class="shen" id="bengua-5yao-6shen"></span>
+                </div>
+                <div class="fill-symbol">
+                    <span class="liuqin" id="bengua-5yao-6q"></span>
+                    <span id="bengua-5yao-nj"></span>
+                    <span id="bengua-5yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+                <div class="fill-symbol">
+                    <span class="shiying" id="bengua-5yao-sy"></span>
+                    <span class="dongyao" id="bengua-5yao-d"></span>
+                </div>
+            </div>
+
+            <div class="bengua-symbol" data-symbol="1" id="4yao">
+                <div class="fill-symbol">
+                    <span class="shen" id="bengua-4yao-6shen"></span>
+                </div>
+                <div class="fill-symbol">
+                    <span class="liuqin" id="bengua-4yao-6q"></span>
+                    <span id="bengua-4yao-nj"></span>
+                    <span id="bengua-4yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+                <div class="fill-symbol">
+                    <span class="shiying" id="bengua-4yao-sy"></span>
+                    <span class="dongyao" id="bengua-4yao-d"></span>
+                </div>
+            </div>
+
+            <div class="bengua-symbol" data-symbol="1" id="3yao">
+                <div class="fill-symbol">
+                    <span class="shen" id="bengua-3yao-6shen"></span>
+                </div>
+                <div class="fill-symbol">
+                    <span class="liuqin" id="bengua-3yao-6q"></span>
+                    <span id="bengua-3yao-nj"></span>
+                    <span id="bengua-3yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+                <div class="fill-symbol">
+                    <span class="shiying" id="bengua-3yao-sy"></span>
+                    <span class="dongyao" id="bengua-3yao-d"></span>
+                </div>
+            </div>
+
+            <div class="bengua-symbol" data-symbol="1" id="2yao">
+                <div class="fill-symbol">
+                    <span class="shen" id="bengua-2yao-6shen"></span>
+                </div>
+                <div class="fill-symbol">
+                    <span class="liuqin" id="bengua-2yao-6q"></span>
+                    <span id="bengua-2yao-nj"></span>
+                    <span id="bengua-2yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+                <div class="fill-symbol">
+                    <span class="shiying" id="bengua-2yao-sy"></span>
+                    <span class="dongyao" id="bengua-2yao-d"></span>
+                </div>
+            </div>
+
+            <div class="bengua-symbol" data-symbol="1" id="1yao">
+                <div class="fill-symbol">
+                    <span class="shen" id="bengua-1yao-6shen"></span>
+                </div>
+                <div class="fill-symbol">
+                    <span class="liuqin" id="bengua-1yao-6q"></span>
+                    <span id="bengua-1yao-nj"></span>
+                    <span id="bengua-1yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+                <div class="fill-symbol">
+                    <span class="shiying" id="bengua-1yao-sy"></span>
+                    <span class="dongyao" id="bengua-1yao-d"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="biangua-wai">
+        <div class="card biangua-guaming" id="biangua-guaming"></div>
+        <div class="biangua">
+
+            <div class="biangua-symbol" data-symbol="1" id="biangua-6yao">
+                <div class="fill-symbol">
+                    <span id="biangua-6yao-6q"></span>
+                    <span id="biangua-6yao-nj"></span>
+                    <span id="biangua-6yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+            </div>
+
+            <div class="biangua-symbol" data-symbol="1" id="biangua-5yao">
+                <div class="fill-symbol">
+                    <span id="biangua-5yao-6q"></span>
+                    <span id="biangua-5yao-nj"></span>
+                    <span id="biangua-5yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+            </div>
+
+            <div class="biangua-symbol" data-symbol="1" id="biangua-4yao">
+                <div class="fill-symbol">
+                    <span id="biangua-4yao-6q"></span>
+                    <span id="biangua-4yao-nj"></span>
+                    <span id="biangua-4yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+            </div>
+
+            <div class="biangua-symbol" data-symbol="1" id="biangua-3yao">
+                <div class="fill-symbol">
+                    <span id="biangua-3yao-6q"></span>
+                    <span id="biangua-3yao-nj"></span>
+                    <span id="biangua-3yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+            </div>
+
+            <div class="biangua-symbol" data-symbol="1" id="biangua-2yao">
+                <div class="fill-symbol">
+                    <span id="biangua-2yao-6q"></span>
+                    <span id="biangua-2yao-nj"></span>
+                    <span id="biangua-2yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+            </div>
+
+            <div class="biangua-symbol" data-symbol="1" id="biangua-1yao">
+                <div class="fill-symbol">
+                    <span id="biangua-1yao-6q"></span>
+                    <span id="biangua-1yao-nj"></span>
+                    <span id="biangua-1yao-5x"></span>
+                </div>
+                <div class="symbol-img"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+            <div class="main-panel-btn">
+                
+    <div class="btn" id="qigua">时空起卦</div>
+
+                <!-- 解卦按钮 -->
+                <div class="btn" id="jiegua">解读</div>
+                <div class="btn" id="reset">重置</div>
+            </div>
+        </div>
+        <!-- 右侧聊天面板 -->
+        <div class="panel" id="chat-panel">
+            
+            <div class="chat-panel-tabs">
+                <div class="tab active" data-target="jiedu">
+                    
+    六爻妙解
+
+                </div>
+                
+    <div class="tab" data-target="mapping_page">六爻类象</div>
+    <div class="tab" data-target="yijing">易经爻辞</div>
+
+            </div>
+            <div class="top-tips">
+                        <div class="tips" id="tips">
+                            <div class="tips-text" id="tips-text">相信科学真理，反对封建迷信，算法模拟古法，解读仅供趣谈</div>
+                        </div>
+                    </div>
+            <div class="chat-panel-content">
+                
+                <div class="content active" id="jiedu">
+                    <div class="result" id="result"></div>
+                </div>
+                
+    <iframe class="content" id="mapping_page" src="../liuyao/mapping_page/index.html?theme=light"></iframe>
+    <iframe class="content" id="yijing" src="../liuyao/yijing/index.html?theme=light"></iframe>
+
+            </div>
+            <div class="down-panel">
+                        <div class="appraise-panel" id="appraise-panel">
+                            <div class="appraise-item">
+                                <label class="appraise-label" for="appraise-rating-input">解读评分</label>
+                                <div class="appraise-control">
+                                    <div class="appraise-rating-container">
+                                        <input type="range" min="1.0" max="10.0" step="0.1" value="8.0"
+                                               class="appraise-rating-slider" id="appraise-rating-input">
+                                        <span class="appraise-rating-value" id="rating-value-display">8.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appraise-item">
+                                <label class="appraise-label" for="case-is-open">公开状态</label>
+                                <button class="appraise-switch" id="case-is-open" data-open="True">
+                                <span class="appraise-switch-slider">
+                                    <span class="appraise-switch-knob" id="appraise-switch-knob"></span>
+                                </span>
+                                    <span class="appraise-switch-label" id="appraise-switch-label">公开</span>
+                                </button>
+	</div>
+                        <div class="share-case-url" id="share-case-url"></div>
+                        <div class="chat-panel-btn">
+                            <div class="btn" id="save">保存</div>
+                            <div class="btn" id="share">分享</div>
+                            <div class="btn disabled" id="follow" data-is-vip="false">追问</div>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+    
+<section class="geo-content" aria-labelledby="geo-content-title">
+    <div class="geo-content-inner">
+        <h1 id="geo-content-title">六爻在线排盘与 AI 深度解卦</h1>
+
+            <p class="geo-definition">六爻是传统预测体系中围绕卦象、爻位、六亲、六神、用神、世应、动爻与日月生克进行综合判断的方法，用于分析具体问题的状态、阻力、变化方向与可能结果。</p>
+
+            <div class="geo-intro">
+                
+                    <p>灵爻妙解六爻应用面向需要六爻起卦、排盘、解卦与案例复盘的用户，提供从问题输入、在线排盘到 AI 深度解读的一体化体验。</p>
+                
+                    <p>系统围绕六爻判断的关键环节展开分析，包括用神取用、世应关系、动爻变化、现实对轨与应期推断，让卦象判断更有层次，也更便于理解和复盘。</p>
+                
+            </div>
+
+            <section class="geo-section">
+                <h2>核心功能</h2>
+                <ul>
+                    
+                        <li>
+                            <strong>在线六爻起卦排盘</strong>
+                            <span>支持围绕感情、事业、财运、合作、考试、出行、失物、健康趋势等问题进行六爻起卦与排盘。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>六爻知识库增强解读</strong>
+                            <span>结合用神、六亲、六神、世应、动爻、日月生克等判断要点组织 AI 解读。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>用神、世应、动爻分层推理</strong>
+                            <span>按六爻解卦逻辑拆分判断过程，不只给出结论，也呈现判断依据。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>上下文工程与现实对轨</strong>
+                            <span>将用户问题、时间信息、卦盘结构和现实背景整理成可推理上下文。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>MCP 应期计算工具辅助推断</strong>
+                            <span>围绕日月、动变、冲合、旬空等因素提供时间节点参考。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>单智能体与多智能体编排</strong>
+                            <span>支持快速单智能体解读，也支持多智能体辩论式分析。</span>
+                        </li>
+                    
+                </ul>
+            </section>
+
+            <section class="geo-section">
+                <h2>如何使用</h2>
+                <ol>
+                    
+                        <li>
+                            <strong>输入占问信息</strong>
+                            <span>填写占问人、问题、时间等必要信息，确保问题具体、边界清晰。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>生成六爻卦盘</strong>
+                            <span>系统根据输入信息生成卦盘，并展示干支、旬空、六亲、六神、动爻等结构。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>选择 AI 解读模式</strong>
+                            <span>可选择标准流式解读或集群解读，按需求平衡速度与分析深度。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>查看分层结论</strong>
+                            <span>重点查看用神取用、世应关系、动爻分析、现实对轨和应期推断。</span>
+                        </li>
+                    
+                        <li>
+                            <strong>保存或公开复盘</strong>
+                            <span>可保存个人卦例，或在脱敏后公开分享用于后续观察与复盘。</span>
+                        </li>
+                    
+                </ol>
+            </section>
+
+            <section class="geo-section">
+                <h2>灵爻妙解如何分析六爻卦象</h2>
+                
+                    <p>灵爻妙解不是简单把卦盘交给通用大模型生成一段文字，而是以六爻知识库为基础，通过上下文工程组织问题背景、卦盘结构、判断规则和现实信息。</p>
+                
+                    <p>排盘完成后，系统会围绕用神取用、世应关系、动爻分析、现实对轨和应期推断展开内容，使判断链条更清晰，也更便于学习、核对与复盘。</p>
+                
+            </section>
+        
+            <section class="geo-section">
+                <h2>与普通 AI 解读工具的区别</h2>
+                
+                    <p>普通 AI 解读工具往往只是把卦盘内容提交给通用模型生成文字。灵爻妙解将术数知识库、排盘数据、计算工具和智能体协作流程结合起来，让 AI 围绕明确的判断链条进行分析。</p>
+                
+                    <p>多智能体模式下，不同 AI 角色会从取用、卦理、现实对轨、应期等角度交叉审视，提出质疑并形成综合判断。</p>
+                
+            </section>
+        
+            <section class="geo-section">
+                <h2>使用边界</h2>
+                
+                    <p>六爻占卜适合作为分析问题、整理思路和观察趋势的参考工具，不应替代现实中的专业意见。涉及医疗、法律、投资、婚姻重大决策等高风险事项时，建议结合实际信息和专业建议审慎判断。</p>
+                
+            </section>
+
+            <section class="geo-section">
+                <h2>常见问题</h2>
+                
+                    <article class="geo-faq-item">
+                        <h3>六爻在线排盘可以看哪些问题？</h3>
+                        <p>可用于感情关系、事业工作、财运趋势、合作成败、考试求职、出行安排、失物寻人、事情发展等问题的参考分析。</p>
+                    </article>
+                
+                    <article class="geo-faq-item">
+                        <h3>灵爻妙解六爻和普通 AI 解读工具有什么区别？</h3>
+                        <p>灵爻妙解基于六爻知识库、上下文工程、MCP 应期计算工具、单智能体与多智能体编排构建，会按用神、世应、动爻、现实对轨、应期等主题展开结构化推理。</p>
+                    </article>
+                
+                    <article class="geo-faq-item">
+                        <h3>什么是用神取用？</h3>
+                        <p>用神是六爻判断中代表所问事情核心对象的关键爻。取用是否准确，会直接影响后续判断方向。</p>
+                    </article>
+                
+                    <article class="geo-faq-item">
+                        <h3>什么是世应关系？</h3>
+                        <p>世爻通常代表求测人自身，应爻常代表对方、目标或外部环境。世应关系可以帮助判断双方状态、互动关系与事情成败倾向。</p>
+                    </article>
+                
+                    <article class="geo-faq-item">
+                        <h3>六爻应期推断可以直接作为结果吗？</h3>
+                        <p>应期推断属于时间参考，适合结合现实进展观察和复盘，不宜作为唯一决策依据。</p>
+                    </article>
+                
+            </section>
+
+            <section class="geo-section">
+                <h2>核心要点</h2>
+                <ul>
+                    
+                        <li>六爻入口页围绕用神取用、世应关系、动爻分析、现实对轨和应期推断组织内容。</li>
+                    
+                        <li>平台支持标准流式解读和多智能体集群解读两种模式。</li>
+                    
+                        <li>应期判断结合 MCP 工具与结构化推理，结果应作为时间参考使用。</li>
+                    
+                </ul>
+            </section>
+
+        <footer class="geo-meta">
+            
+                <p>作者：灵爻妙解内容团队，术数排盘、AI 解读流程与公开卦例复盘</p>
+            
+            <p>发布日期：2026-05-08</p>
+            <p>最后更新：2026-05-08</p>
+            
+                <p>引用来源：
+
+                            <a href="https://schema.org/Article" rel="nofollow noopener noreferrer" target="_blank">Schema.org Article</a>、
+
+                            <a href="https://schema.org/FAQPage" rel="nofollow noopener noreferrer" target="_blank">Schema.org FAQPage</a>、
+
+                            <a href="https://schema.org/HowTo" rel="nofollow noopener noreferrer" target="_blank">Schema.org HowTo</a>、
+
+                            <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" rel="nofollow noopener noreferrer" target="_blank">Google Search Central 结构化数据文档</a>
+
+                </p>
+            
+        </footer>
+    </div>
+</section>
+
+</main>
+
+</div>
+
+</body>
+<script src="../static/module/js/marked.umd.min.js"></script>
+<script src="../static/module/js/qrcode.min.js"></script>
+
+    <script src="../static/module/js/lunar.min.js"></script>
+
+<script src="../static/CACHE/js/output.6f356ccb2171.js"></script>
+</html>

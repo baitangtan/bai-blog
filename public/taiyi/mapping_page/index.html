@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="manifest" href="../../manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="512x512" href="../../apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="512x512" href="../../apple-touch-icon-precomposed.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="灵爻妙解">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="theme-color" content="#222831">
+    <meta name="application-name" content="灵爻妙解">
+    <title>太乙类象 - 灵爻妙解</title>
+    <link rel="stylesheet" href="../../static/CACHE/css/output.df91bdd24dd3.css" type="text/css">
+    <style>
+        :root { background: #f5f5f5; color: #333; }
+        :root.dark { background: #1a1a2e; color: #e0e0e0; }
+        body { background: inherit; }
+        :root.dark .iframe-body { color: #e0e0e0; }
+        :root.dark .card { border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); }
+        :root.dark .sidebar { border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); }
+        :root.dark .nav-link { color: #e0e0e0; }
+        :root.dark .title { color: #f8ebba; }
+        :root.dark .judgment { color: #f8ebba; }
+        :root.dark .info { color: #b0b0b0; }
+        :root.dark .commentary { color: #c0c0c0; }
+        :root.dark hr { background-color: rgba(255,255,255,0.15); }
+    </style>
+    <script>
+        (function() {
+            function applyTheme(theme) {
+                var root = document.documentElement;
+                root.classList.remove('light', 'dark');
+                if (theme === 'dark') {
+                    root.classList.add('dark');
+                    root.style.colorScheme = 'dark';
+                } else {
+                    root.classList.add('light');
+                    root.style.colorScheme = 'light';
+                }
+            }
+            // Initial theme
+            var theme = localStorage.getItem('theme') || 'dark';
+            applyTheme(theme);
+            // Listen for theme changes from parent page
+            window.addEventListener('message', function(e) {
+                if (e.data && e.data.type === 'THEME_CHANGE') {
+                    applyTheme(e.data.theme);
+                }
+            });
+        })();
+    </script>
+</head>
+
+<body class="iframe-body">
+
+    <nav class="sidebar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#tianyi" class="nav-link active">太乙</a></li>
+            <li class="nav-item"><a href="#diyi" class="nav-link">地乙</a></li>
+            <li class="nav-item"><a href="#renyi" class="nav-link">人乙</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">————</a></li>
+            <li class="nav-item"><a href="#tianmu" class="nav-link">天目</a></li>
+            <li class="nav-item"><a href="#kewu" class="nav-link">客五</a></li>
+            <li class="nav-item"><a href="#zhufu" class="nav-link">主符</a></li>
+            <li class="nav-item"><a href="#shenxing" class="nav-link">申行</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">————</a></li>
+            <li class="nav-item"><a href="#kande" class="nav-link">坎德</a></li>
+            <li class="nav-item"><a href="#lide" class="nav-link">离德</a></li>
+            <li class="nav-item"><a href="#gongde" class="nav-link">宫德</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">————</a></li>
+            <li class="nav-item"><a href="#yi" class="nav-link">一</a></li>
+            <li class="nav-item"><a href="#er" class="nav-link">二</a></li>
+            <li class="nav-item"><a href="#san" class="nav-link">三</a></li>
+            <li class="nav-item"><a href="#si" class="nav-link">四</a></li>
+            <li class="nav-item"><a href="#wu" class="nav-link">五</a></li>
+            <li class="nav-item"><a href="#liu" class="nav-link">六</a></li>
+            <li class="nav-item"><a href="#qi" class="nav-link">七</a></li>
+            <li class="nav-item"><a href="#ba" class="nav-link">八</a></li>
+            <li class="nav-item"><a href="#jiu" class="nav-link">九</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="leixiang-container">
+
+                <div class="card" id="tianyi">
+                    <h2 class="title">太乙</h2>
+                    <p class="info">太乙神数之主，统摄全局</p>
+                    <p class="judgment">核心类象：天道、至尊、权威、统帅。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：帝王、领袖、统帅、最高决策者。</p>
+                        <p>事：国运、大事、决策、战略规划。</p>
+                        <p>物：玉玺、权杖、龙椅、皇冠。</p>
+                        <p>地：皇宫、中央、京城、权力中心。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="diyi">
+                    <h2 class="title">地乙</h2>
+                    <p class="info">坤德载物，厚德载福</p>
+                    <p class="judgment">核心类象：大地、承载、孕育、根基。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：母亲、长辈、大地之人、农夫。</p>
+                        <p>事：根基、稳定、孕育、积累。</p>
+                        <p>物：土地、房产、农作物、矿产。</p>
+                        <p>地：田野、农村、山区、根基之地。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="renyi">
+                    <h2 class="title">人乙</h2>
+                    <p class="info">人为万物之灵</p>
+                    <p class="judgment">核心类象：人事、关系、社会、交际。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：常人、社会人、交际者、关系人。</p>
+                        <p>事：人际、社交、关系、合作。</p>
+                        <p>物：社交工具、通讯设备、交通工具。</p>
+                        <p>地：社交场所、市场、公共场所。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="tianmu">
+                    <h2 class="title">天目</h2>
+                    <p class="info">洞察天机，明察秋毫</p>
+                    <p class="judgment">核心类象：观察、洞察、智慧、预见。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：观察者、智者、预言家、侦探。</p>
+                        <p>事：观察、洞察、分析、预见。</p>
+                        <p>物：望远镜、显微镜、镜子、眼睛。</p>
+                        <p>地：观察台、研究所、分析室。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="kewu">
+                    <h2 class="title">客五</h2>
+                    <p class="info">客星入局，变化之象</p>
+                    <p class="judgment">核心类象：外来、变化、干扰、影响。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：外来者、客人、访客、干扰者。</p>
+                        <p>事：外来影响、变化、干扰、意外。</p>
+                        <p>物：外来物品、礼物、干扰物。</p>
+                        <p>地：外来之地、陌生环境、变化场所。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="zhufu">
+                    <h2 class="title">主符</h2>
+                    <p class="info">主事之符，核心关键</p>
+                    <p class="judgment">核心类象：主要、核心、关键、主导。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：主角、核心人物、主导者、负责人。</p>
+                        <p>事：主要事务、核心问题、关键决策。</p>
+                        <p>物：核心物品、关键工具、主导因素。</p>
+                        <p>地：核心区域、主要场所、关键位置。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="shenxing">
+                    <h2 class="title">申行</h2>
+                    <p class="info">申明行止，进退有度</p>
+                    <p class="judgment">核心类象：行动、执行、进退、节制。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：执行者、行动者、进退之人、节制者。</p>
+                        <p>事：行动、执行、进退、节制。</p>
+                        <p>物：交通工具、执行工具、节制物品。</p>
+                        <p>地：行动路线、执行场所、进退之路。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="kande">
+                    <h2 class="title">坎德</h2>
+                    <p class="info">坎为水，主险</p>
+                    <p class="judgment">核心类象：险难、智慧、隐藏、流动。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：智者、隐士、冒险者、流动之人。</p>
+                        <p>事：险难、智慧、隐藏、流动。</p>
+                        <p>物：水、险地、隐藏物、流动物。</p>
+                        <p>地：水边、险地、隐蔽之处、流动场所。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="lide">
+                    <h2 class="title">离德</h2>
+                    <p class="info">离为火，主明</p>
+                    <p class="judgment">核心类象：光明、文化、美丽、文明。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：文人、艺术家、美丽之人、文明之人。</p>
+                        <p>事：文化、艺术、美丽、文明。</p>
+                        <p>物：灯火、文化品、艺术品、美丽物。</p>
+                        <p>地：文化场所、艺术之地、美丽之处、文明中心。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="gongde">
+                    <h2 class="title">宫德</h2>
+                    <p class="info">宫位之德，居中守正</p>
+                    <p class="judgment">核心类象：中心、稳定、守正、中庸。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：中正之人、稳定之人、守正之人、中庸之人。</p>
+                        <p>事：中心事务、稳定之事、守正之举、中庸之道。</p>
+                        <p>物：中心之物、稳定之物、守正之物、中庸之物。</p>
+                        <p>地：中心位置、稳定之地、守正之处、中庸之所。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="yi">
+                    <h2 class="title">一</h2>
+                    <p class="info">天一生水，万物之始</p>
+                    <p class="judgment">核心类象：开始、原始、统一、根本。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：开创者、领导者、统一者、根本之人。</p>
+                        <p>事：开始、开创、统一、根本之事。</p>
+                        <p>物：原始之物、统一之物、根本之物。</p>
+                        <p>地：起始之地、统一之处、根本之所。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="er">
+                    <h2 class="title">二</h2>
+                    <p class="info">地二生火，阴阳相对</p>
+                    <p class="judgment">核心类象：对立、配合、合作、平衡。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：合作者、配合者、平衡之人、对偶之人。</p>
+                        <p>事：合作、配合、平衡、对立之事。</p>
+                        <p>物：配合之物、平衡之物、对立之物。</p>
+                        <p>地：合作之地、平衡之处、对立之所。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="san">
+                    <h2 class="title">三</h2>
+                    <p class="info">天三生木，三才之道</p>
+                    <p class="judgment">核心类象：发展、成长、变化、多端。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：发展者、成长者、变化之人、多端之人。</p>
+                        <p>事：发展、成长、变化、多端之事。</p>
+                        <p>物：成长之物、变化之物、多端之物。</p>
+                        <p>地：发展之地、成长之处、变化之所。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="si">
+                    <h2 class="title">四</h2>
+                    <p class="info">地四生金，四象之位</p>
+                    <p class="judgment">核心类象：稳定、四方、基础、秩序。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：稳定之人、四方之人、基础之人、秩序之人。</p>
+                        <p>事：稳定、四方、基础、秩序之事。</p>
+                        <p>物：稳定之物、四方之物、基础之物、秩序之物。</p>
+                        <p>地：稳定之地、四方之处、基础之所、秩序之地。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="wu">
+                    <h2 class="title">五</h2>
+                    <p class="info">天五生土，五行之中</p>
+                    <p class="judgment">核心类象：中心、核心、主导、关键。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：中心之人、核心之人、主导之人、关键之人。</p>
+                        <p>事：中心之事、核心之事、主导之事、关键之事。</p>
+                        <p>物：中心之物、核心之物、主导之物、关键之物。</p>
+                        <p>地：中心之地、核心之处、主导之所、关键之地。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="liu">
+                    <h2 class="title">六</h2>
+                    <p class="info">地六成水，六合之数</p>
+                    <p class="judgment">核心类象：完成、圆满、和谐、合作。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：完成之人、圆满之人、和谐之人、合作之人。</p>
+                        <p>事：完成、圆满、和谐、合作之事。</p>
+                        <p>物：完成之物、圆满之物、和谐之物、合作之物。</p>
+                        <p>地：完成之地、圆满之处、和谐之所、合作之地。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="qi">
+                    <h2 class="title">七</h2>
+                    <p class="info">天七成火，七政之数</p>
+                    <p class="judgment">核心类象：变化、转折、突破、创新。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：变化之人、转折之人、突破之人、创新之人。</p>
+                        <p>事：变化、转折、突破、创新之事。</p>
+                        <p>物：变化之物、转折之物、突破之物、创新之物。</p>
+                        <p>地：变化之地、转折之处、突破之所、创新之地。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="ba">
+                    <h2 class="title">八</h2>
+                    <p class="info">地八成木，八卦之数</p>
+                    <p class="judgment">核心类象：广博、全面、包容、多样。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：广博之人、全面之人、包容之人、多样之人。</p>
+                        <p>事：广博、全面、包容、多样之事。</p>
+                        <p>物：广博之物、全面之物、包容之物、多样之物。</p>
+                        <p>地：广博之地、全面之处、包容之所、多样之地。</p>
+                    </div>
+                </div>
+
+                <div class="card" id="jiu">
+                    <h2 class="title">九</h2>
+                    <p class="info">天九成金，九宫之极</p>
+                    <p class="judgment">核心类象：极致、巅峰、完美、终极。</p>
+                    <div class="commentary">
+                        <p>扩展类象：</p>
+                        <p>人：极致之人、巅峰之人、完美之人、终极之人。</p>
+                        <p>事：极致、巅峰、完美、终极之事。</p>
+                        <p>物：极致之物、巅峰之物、完美之物、终极之物。</p>
+                        <p>地：极致之地、巅峰之处、完美之所、终极之地。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

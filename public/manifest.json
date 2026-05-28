@@ -1,0 +1,99 @@
+{
+  "name": "灵爻妙解",
+  "short_name": "灵爻妙解",
+  "id": "/",
+  "description": "灵爻妙解",
+  "theme_color": "#090c15",
+  "background_color": "#090c15",
+  "display": "standalone",
+  "scope": "/",
+  "orientation": "any",
+  "start_url": "/",
+  "dir": "ltr",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/app-icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/app-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/app-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/app-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "首页",
+      "url": "/",
+      "description": "灵爻妙解首页",
+      "icons": [
+        {
+          "src": "/app-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "六爻",
+      "url": "/liuyao/",
+      "description": "六爻排盘解卦",
+      "icons": [
+        {
+          "src": "/app-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "六壬",
+      "url": "/liuren/",
+      "description": "六壬排盘解卦",
+      "icons": [
+        {
+          "src": "/app-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "奇门",
+      "url": "/qimen/",
+      "description": "奇门排盘解卦",
+      "icons": [
+        {
+          "src": "/app-icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/static/base/img/shot.png",
+      "sizes": "748x1538",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/base/img/lingyao-1920x1080.png",
+      "form_factor": "wide",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { RippleButton } from "@/components/ripple-button";
 
 export function Hero() {
@@ -6,7 +7,7 @@ export function Hero() {
       <div className="layout flex flex-col items-center gap-10 md:flex-row md:items-center">
         <div className="flex-1">
           <h2 className="animate-fade-in-up text-2xl font-bold md:text-4xl 2xl:text-5xl" style={{ animationDelay: "0ms" }}>
-            Hi!👋
+            Hello!👋
           </h2>
           <h1
             className="animate-fade-in-up mt-1 text-3xl font-bold md:text-5xl 2xl:text-6xl"
@@ -55,9 +56,11 @@ export function Hero() {
           <div className="group relative">
             <div className="absolute -inset-3 animate-glow-pulse rounded-full bg-gradient-to-r from-primary-300 to-primary-400 opacity-40 blur-xl transition duration-1000 group-hover:opacity-70" />
             <div className="relative h-40 w-40 overflow-hidden rounded-full border-[3px] border-white shadow-xl transition-transform duration-500 group-hover:scale-[1.03] dark:border-gray-600 md:h-56 md:w-56">
-              <img
+              <Image
                 src="/images/avatar.jpg"
                 alt="Bai"
+                width={224}
+                height={224}
                 className="h-full w-full object-cover"
               />
             </div>

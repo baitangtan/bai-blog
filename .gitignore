@@ -47,3 +47,37 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# AI tool / IDE config (template cruft)
+.claude/
+.cursor/
+.github/
+.amazonq/
+.augment/
+.codex/
+.continue/
+.gemini/
+.opencode/
+.windsurf/
+.aider.conf.yml
+.clinerules
+.windsurfrules
+
+# Template infrastructure (not blog code)
+AGENTS.md
+CHANGELOG.md
+CLAUDE.md
+GEMINI.md
+LICENSE
+components.json
+docker-compose.yml
+Dockerfile
+Dockerfile.dev
+.dockerignore
+.gitattributes
+.nvmrc
+.vercelignore
+
+# Template docs & scripts (not blog code)
+docs/
+scripts/

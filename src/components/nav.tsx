@@ -12,22 +12,25 @@ const navLinks = [
 
 export function Nav() {
   const pathname = usePathname();
-  const [mounted, setMounted] = useState(false);
   const [dark, setDark] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("theme");
-    const isDark = stored ? stored === "dark" : true;
-    setDark(isDark);
-    document.documentElement.classList.remove("light", "dark");
-    document.documentElement.classList.add(isDark ? "dark" : "light");
-    document.documentElement.style.colorScheme = isDark ? "dark" : "light";
-    setMounted(true);
+    if (stored) setDark(stored === "dark");
   }, []);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(dark ? "dark" : "light");
+    document.documentElement.style.colorScheme = dark ? "dark" : "light";
+  }, [dark]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const s = window.scrollY > 8;
+      setScrolled(s);
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -81,7 +84,7 @@ export function Nav() {
             aria-label="Toggle theme"
           >
             <span className="flex items-center justify-center transition-transform duration-500" key={String(dark)}>
-              {mounted && dark ? (
+              {dark ? (
                 <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em">
                   <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clipRule="evenodd" />
                 </svg>
