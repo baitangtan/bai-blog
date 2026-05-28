@@ -1349,7 +1349,7 @@ function clearUrlTempId(){if(!window.location.search.includes('temp_id=')){retur
 const url=new URL(window.location);url.searchParams.delete('temp_id');window.history.replaceState({},document.title,url.toString());}
 function resetTaskRuntime(){liuyaoJieguaAsync?.resetRuntime?.();}
 function resetStorage(){liuyaoLocalStorage.resetStorage();}
-async function resetInputAndPaipan(){['name','gender','birthday','identity','question'].forEach(function(id){const el=document.getElementById(id);if(!el)return;el.value='';el.setAttribute('value','');});await inputModule.init();liuyaoQigua.setClickCount(1);await liuyao.init();await liuyao.initInputsStorage();}
+async function resetInputAndPaipan(){await inputModule.init();['name','gender','birthday','identity','question'].forEach(function(id){const el=document.getElementById(id);if(!el)return;el.value='';el.setAttribute('value','');});liuyaoQigua.setClickCount(1);await liuyao.init();await liuyao.initInputsStorage();}
 function resetView(){clearResultPanel();clearSharePanel();resetAppraisePanel();liuyaoUI.resetAgentPanel();liuyaoUI.setBtnState('enable');liuyaoUI.resetResultActions();liuyaoUI.updateTips(liuyaoUtils.DEFAULT_TIPS_TEXT,false);}
 function clearResultPanel(){const resultElement=document.getElementById('result');if(resultElement){resultElement.innerHTML='';}
 if(typeof streamRenderer!=='undefined'){streamRenderer.clear('result');streamRenderer.clear('debate-round-0');for(let index=1;index<=5;index++){streamRenderer.clear(`debate-round-${index}`);}}
