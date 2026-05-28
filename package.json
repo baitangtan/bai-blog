@@ -24,7 +24,7 @@
     "shadcn-ui"
   ],
   "engines": {
-    "node": ">=18"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "next dev",
