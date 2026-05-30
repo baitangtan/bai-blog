@@ -808,13 +808,74 @@ Prompt 调了不少次，主要是让 AI 别太发散，按框架来分析，同
 
 ---
 
-## 数据库
+## Supabase 搭建
 
-Supabase 用起来挺省心的，主要是省了自己搭后端。
+选 Supabase 主要是省事，不用自己搭后端，直接用它的 PostgreSQL 加 REST API。
 
-建了一张 \`ai_tasks\` 表，存任务 ID、业务类型、状态、请求参数、解读结果这些。状态流转就是 pending → processing → completed / failed。
+### 创建项目
 
-前端通过轮询或者 SSE 保持连接，拿到结果就展示。失败了可以重试，反正 taskId 不变。
+去 supabase.com 注册账号，新建一个项目。选区域的时候离你近的就行，我选的新加坡。项目创建完会给你两个 key：
+- **anon key** — 前端用的，权限有限
+- **service role key** — 后端用的，有完整权限，别暴露到前端
+
+这两个 key 加上项目 URL 就是 \`.env.local\` 里那三个变量。
+
+### 建表
+
+项目创建完，在 SQL Editor 里直接跑建表语句。
+
+**ai_tasks 表**（占卜任务）：
+
+\`\`\`sql
+create table ai_tasks (
+  task_id uuid primary key,
+  biz_type text not null,           -- liuyao / liuren / qimen / taiyi
+  status text default 'pending',    -- pending / processing / completed / failed
+  request_payload jsonb,            -- 原始请求数据
+  result_analysis text,             -- AI 解读结果
+  reasoning_process text,           -- 推理过程（目前没用到，留着备用）
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+\`\`\`
+
+**messages 表**（留言板）：
+
+\`\`\`sql
+create table messages (
+  id bigint generated always as identity primary key,
+  nickname text default '匿名',
+  content text not null,
+  is_approved boolean default false,  -- 需要审核才显示
+  created_at timestamptz default now()
+);
+\`\`\`
+
+建完表之后，记得在 Supabase 后台的 Table Editor 里看看字段对不对。也可以在那边直接加 RLS 策略，不过我图省事先没加。
+
+### Next.js 里怎么连
+
+服务端用 service role key，这样能读写所有数据：
+
+\`\`\`typescript
+import { createClient } from "@supabase/supabase-js";
+
+export const supabaseServer = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
+\`\`\`
+
+前端用 anon key，只能访问开了权限的表：
+
+\`\`\`typescript
+export const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
+\`\`\`
+
+实际用下来，前端基本不直接碰数据库，都是通过 API Routes 中转。只有留言板的读取是前端直接查的。
 
 ---
 
