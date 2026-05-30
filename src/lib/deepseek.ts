@@ -21,7 +21,7 @@ export async function callDeepSeekStream(
         Authorization: `Bearer ${DEEPSEEK_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "mimo-v2.5",
+        model: "glm-5.1",
         messages: [
           { role: "system", content: systemPrompt },
           { role: "user", content: userPrompt },

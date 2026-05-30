@@ -26,7 +26,7 @@ export async function POST(request: Request) {
               Authorization: `Bearer ${DEEPSEEK_API_KEY}`,
             },
             body: JSON.stringify({
-              model: "mimo-v2.5",
+              model: "glm-5.1",
               stream: true,
               messages: [
                 { role: "system", content: system_prompt },
